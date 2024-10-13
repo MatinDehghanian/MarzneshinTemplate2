@@ -1,22 +1,7 @@
-<p align="center">
-  <a href="https://github.com/oXIIIo/marzban-template/" target="_blank" rel="noopener noreferrer">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gozargah/Marzban-docs/master/screenshots/logo-dark.png">
-      <img width="160" height="160" src="https://raw.githubusercontent.com/Gozargah/Marzban-docs/master/screenshots/logo-dark.png">
-    </picture>
-  </a>
-</p>
-<h1 align="center"/>تمپلیت های مختلف برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
+<h1 align="center"/>تمپلیت های مختلف برای پنل  <a href="https://github.com/marzneshin/marzneshin">مرزنشین</a></h1>
 
 # مقدمه
-لیستی از تمپلیت های شخصی سازی شده برای مرزبان
-
-# لیست تمپلیت ها
-- [تمپلیت برای v2ray](https://github.com/WhyMan1/marzban-template/tree/master/v2ray)
-- [تمپلیت برای sing-box](https://github.com/WhyMan1/marzban-template/tree/master/singbox)
-- [تمپلیت برای sing-box with IPv6](https://github.com/WhyMan1/marzban-template/tree/master/singboxWithIPv6)
-- [صفحه سابسکریپشن](https://github.com/WhyMan1/marzban-template/tree/master/subscription)
-- [صفحه خانه](https://github.com/WhyMan1/marzban-template/tree/master/home)
+لیستی از تمپلیت های شخصی سازی شده برای مرزنشین
 
 
 # مراحل نصب
@@ -26,31 +11,22 @@
 برای نصب همه تمپلیت های موجو دستورات زیر را در ترمینال سرور خود اجرا کنید:
 1. دانلود فایل های تمپلیت
 ```sh
-sudo wget -N -P /var/lib/marzban/templates/singbox/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/singbox/default.json
-sudo wget -N -P /var/lib/marzban/templates/v2ray/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/v2ray/default.json
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
-sudo wget -N -P /var/lib/marzban/templates/home/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/home/index.html
+sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/marzneshin-template/master/subscription/index.html
 ```
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
-echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
-echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
-echo 'SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"' | sudo tee -a /opt/marzban/.env
-echo 'USE_CUSTOM_JSON_DEFAULT=True' | sudo tee -a /opt/marzban/.env
-echo 'V2RAY_SUBSCRIPTION_TEMPLATE="v2ray/default.json"' | sudo tee -a /opt/marzban/.env
+echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"' | sudo tee -a /etc/opt/marzneshin/.env
+echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /etc/opt/marzneshin/.env
 ```
-یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
+یا مقادیر زیر رو در فایل `.env` در پوشه `/etc/opt/marzneshin` قرار بدین
 ```sh
-CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
+CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzneshin/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
-SINGBOX_SUBSCRIPTION_TEMPLATE="singbox/default.json"
-USE_CUSTOM_JSON_DEFAULT=True
-V2RAY_SUBSCRIPTION_TEMPLATE="v2ray/default.json"
 ```
 
-3. ری استارت مرزبان
+3. ری استارت مرزنشین
 ```sh
-marzban restart
+marzneshin restart
 ```
 
 ## بروزرسانی
