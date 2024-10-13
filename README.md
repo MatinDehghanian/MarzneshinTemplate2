@@ -1,15 +1,12 @@
-<h1 align="center"/>تمپلیت های مختلف برای پنل  <a href="https://github.com/marzneshin/marzneshin">مرزنشین</a></h1>
+<h1 align="center"/>تمپلیت برای پنل  <a href="https://github.com/marzneshin/marzneshin">مرزنشین</a></h1>
 
 # مقدمه
-لیستی از تمپلیت های شخصی سازی شده برای مرزنشین
+ تمپلیت شخصی سازی شده برای مرزنشین
 
 
-# مراحل نصب
-برای نصب هر تمپلیت به صفحه مربوط به آن مراجعه کنید
-
-# نصب همه
-برای نصب همه تمپلیت های موجو دستورات زیر را در ترمینال سرور خود اجرا کنید:
-1. دانلود فایل های تمپلیت
+# نصب
+برای نصب تمپلیت دستورات زیر را در ترمینال سرور خود اجرا کنید:
+1. دانلود فایل تمپلیت
 ```sh
 sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/marzneshin-template/master/subscription/index.html
 ```
@@ -31,9 +28,3 @@ marzneshin restart
 
 ## بروزرسانی
 برای بروزرسانی تمپلیت ها فقط کافیست مرحله 1 را تکرار کنید.
-
-# حمایت از من
-
-<a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
-  <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
-</a>
