@@ -534,12 +534,12 @@
             };
 
             const colorMap = {
-              is_active: data.is_active ? "#00c853" : "#ff5252", 
+              is_active: data.is_active ? "#00c853" : "#ff5252",
               expired: data.expired ? "#ff5252" : "#00c853",
               data_limit_reached: data.data_limit_reached
                 ? "#ff9800"
-                : "#00c853", 
-              enabled: data.enabled ? "#00c853" : "#ff5252", 
+                : "#00c853",
+              enabled: data.enabled ? "#00c853" : "#ff5252",
             };
 
             const primaryStatus = data.expired
@@ -585,7 +585,9 @@
             const importButton = document.getElementById(
               "sing-box-import-button"
             );
-            const subscriptionUrl = encodeURIComponent(`${window.location.origin}{{ user.subscription_url }}`);
+            const subscriptionUrl = data?.subscription_url.includes("https://")
+              ? data?.subscription_url
+              : `${window.location.origin}${data?.subscription_url}`;
             const username = encodeURIComponent(data.username);
             document.getElementById("data-username").textContent = username;
             importButton.href = `sing-box://import-remote-profile?url=${subscriptionUrl}#${username}`;
