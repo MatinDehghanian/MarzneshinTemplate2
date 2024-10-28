@@ -8,7 +8,7 @@
 برای نصب تمپلیت دستورات زیر را در ترمینال سرور خود اجرا کنید:
 1. دانلود فایل تمپلیت
 ```sh
-sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/marzneshin-template/master/subscription/index.html
+sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/MarzneshinTemplate2/master/subscription/index.html
 ```
 2. دستورات زیر رو تو ترمینال سرورتون بزنید:
 ```sh
@@ -28,3 +28,11 @@ marzneshin restart
 
 ## بروزرسانی
 برای بروزرسانی تمپلیت ها فقط کافیست مرحله 1 را تکرار کنید.
+
+
+## حمایت و سفارش
+برای سفارش تمپلیت اختصاصی خودتون توی <a href="https://t.me/Mqtin">تلگرام</a> با من در ارتباط باشین.
+
+<a href="https://nowpayments.io/donation?api_key=Z50AKDD-DHSMN86-P0DQ22X-1SQAFCA" target="_blank" rel="noreferrer noopener">
+    <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
+</a>
